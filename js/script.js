@@ -10,6 +10,13 @@ function showWelcomePopup() {
     }
 }
 
+  const toggle = document.getElementById('nav-toggle')
+  const mobileMenu = document.getElementById('nav-mobile-menu')
+  toggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+  }
+)
+
 function validateForm() {
     const nameInput = document.getElementById('name-input');
     const dateInput = document.getElementById('date-input');
